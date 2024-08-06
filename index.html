@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Saidatta Murti - Portfolio</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>S</span>aidatta <span>M</span>urti</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#skills" data-after="Skills">Skills</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+            <li><a href="certification.html">Certifications</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- Hero Section -->
+  <!-- Hero Section -->
+<section id="hero">
+    <div class="hero container">
+        <div>
+            <h1>Welcome to My Portfolio, <span></span></h1>
+            <h1>I am Saidatta Murti, <span></span></h1>
+            <h1><span class="role-text">a Programmer,</span> <span class="role-text">Data Analyst,</span> <span class="role-text">Social Media Manager,</span> <span class="role-text">and SEO Specialist</span> </h1>
+            <div class="cta-container">
+                <a href="#projects" type="button" class="cta">Explore My Work</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- End Hero Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="IMG20220417182058_Bokeh.jpg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>Me</span></h1>
+        <h2>Front End Developer</h2>
+        <p>I am a passionate computer science graduate with strong problem-solving skills and experience in data analysis and social media management.
+          I have a proven track record in improving social media engagement and conducting detailed data analysis to drive business decisions.
+          I have developed a diverse skill set that includes proficiency in Java, SQL, HTML, Python, and AI, and I have hands-on experience in content creation.
+          Throughout my academic career, I have actively engaged in multiple projects and work experiences that have enhanced my technical and professional skills.</p>
+          <a href="Saidatta_Murti.pdf" class="cta" target="_blank">View Resume</a>
+
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+ <!-- Skills Section -->
+<!-- Skills Section -->
+<section id="skills">
+    <div class="tabs">
+        <button class="tablink" onclick="openSkill(event, 'TechnicalSkills')">Technical Skills</button>
+        <button class="tablink" onclick="openSkill(event, 'DataAnalysis')">Data Analysis & Digital Skills</button>
+        <button class="tablink" onclick="openSkill(event, 'SocialMedia')">Social Media Skills</button>
+    </div>
+
+    <div id="TechnicalSkills" class="tabcontent">
+        <h3>Technical Skills</h3>
+        <div class="skills-container">
+            <div class="skill-item">
+                <img src="java.svg" alt="Java" class="skill-icon">
+                <h4>Java</h4>
+                <p>Experience in Java programming, object-oriented design, and developing robust applications.</p>
+            </div>
+            <div class="skill-item">
+                <img src="sql.png" alt="SQL" class="skill-icon">
+                <h4>SQL</h4>
+                <p>Proficient in SQL for database management, querying, and data manipulation.</p>
+            </div>
+            <div class="skill-item">
+                <img src="html.png" alt="HTML" class="skill-icon">
+                <h4>HTML</h4>
+                <p>Skilled in creating and structuring web pages using HTML.</p>
+            </div>
+            <div class="skill-item">
+                <img src="python.webp" alt="Python" class="skill-icon">
+                <h4>Python</h4>
+                <p>Experienced in Python programming for data analysis, scripting, and automation.</p>
+            </div>
+            <div class="skill-item">
+                <img src="ai.jpg" alt="AI" class="skill-icon">
+                <h4>AI</h4>
+                <p>Knowledgeable in AI concepts and technologies, including machine learning and neural networks.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="DataAnalysis" class="tabcontent">
+        <h3>Data Analysis & Digital Skills</h3>
+        <div class="skills-container">
+            <div class="skill-item">
+                <img src="excel.png" alt="Excel" class="skill-icon">
+                <h4>Excel</h4>
+                <p>Proficient in using Excel for data analysis, visualization, and creating complex formulas.</p>
+            </div>
+            <div class="skill-item">
+                <img src="python.webp" alt="Python" class="skill-icon">
+                <h4>Data Visualization</h4>
+                <p>Experienced in using Python for statistical analysis and data visualization.</p>
+            </div>
+            <div class="skill-item">
+                <img src="sql.png" alt="SQL" class="skill-icon">
+                <h4>Database Management</h4>
+                <p>Knowledge of SQL and NoSQL databases for querying and managing data.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="SocialMedia" class="tabcontent">
+        <h3>Social Media Skills</h3>
+        <div class="skills-container">
+            <div class="skill-item">
+                <img src="seo.jpg" alt="SEO" class="skill-icon">
+                <h4>SEO</h4>
+                <p>Expertise in Search Engine Optimization to enhance website visibility and ranking.</p>
+            </div>
+            <div class="skill-item">
+                <img src="smm.webp" alt="Social Media Management" class="skill-icon">
+                <h4>Social Media Management</h4>
+                <p>Experience in managing social media platforms and creating engaging content.</p>
+            </div>
+            <div class="skill-item">
+                <img src="content.jpg" alt="Content Creation" class="skill-icon">
+                <h4>Content Creation</h4>
+                <p>Expertise in creating engaging content to increase account activity and reach.</p>
+            </div>
+            <div class="skill-item">
+                <img src="ppc.jpg" alt="PPC" class="skill-icon">
+                <h4>PPC</h4>
+                <p>Knowledge of PPC campaigns for best quick results.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <!-- End Skills Section -->
+  
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Projects</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Social media manager</h1>
+            <h2>Managing instagram account</h2>
+            <p> • Photo and Video Content: Created and edited high-quality photo and video content, elevating engagement metrics by 25%.</p>
+            <p> • Curation for Instagram: Managed and curated engaging content for Instagram, boosting follower growth by 40% over six months.</p>
+            <p> • Unique Memes: produced unique memes that increased student engagement and campus social media interaction by 30%.</p>
+            <p> • Event Posts: Managed posts relevant to university events and oversaw account finances for advertising, resulting in a 50% increase in event attendance.</p>
+          </div>
+          <div class="project-img">
+            <img src="bgimg3.avif" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Garage Booking Website</h1>
+            <h2>Final year project</h2>
+            <p>made a garage booking website</p>
+          </div>
+          <div class="project-img">
+            <img src="Screenshot 2024-02-24 163835.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Tic-Tac-Toe against AI</h1>
+            <h2>associated with university project</h2>
+            <p>programmed a Tic-Tac-Toe game using java where your opponent is Computer</p>
+          </div>
+          <div class="project-img">
+            <img src="portfolio1.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Turtlebot3 Navigation</h1>
+            <h2>Gazebo and Rviz</h2>
+            <p>Programmed shortest path algorithms for Turtlebot3 in Gazebo and Rviz, enhancing robotic navigation accuracy.</p>
+          </div>
+          <div class="project-img">
+            <img src="turtlebot3_navigation.png" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>Info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="phone.jpg" alt="phone"></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+44 7435391916</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="email-logo.webp" alt="email"></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>saidattamurti21@gmail.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="address.jpg" alt="address"></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>sheffield</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>S</span>aidatta <span>M</span>urti</h1>
+      </div>
+      <h2>Your Complete Web Solution</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/saidatta.murti/"><img src="facebook.png" alt="facebook"></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/saidatta_21?igsh=bjF2ZTRyNnhudGg1"><img src="instagram.avif" alt="instagram"></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.threads.net/@saidatta_21"><img src="x.avif" alt="x"></a>
+        </div>
+      </div>
+      <p>Copyright © 2020 Saidatta Murti. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+</body>
+<script>
+    function openSkill(evt, skillName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";  
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(skillName).style.display = "block";  
+    evt.currentTarget.className += " active";
+}
+
+// Set default tab to be open
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector(".tablink").click();
+});
+// Add this script to your app.js file or within a <script> tag
+
+    document.addEventListener("DOMContentLoaded", function() {
+    let index = 0;
+    const roles = document.querySelectorAll('.role-text');
+    const totalRoles = roles.length;
+
+    function showNextRole() {
+        roles.forEach((role, i) => {
+            role.classList.remove('active');
+            if (i === index) {
+                role.classList.add('active');
+            }
+        });
+
+        index = (index + 1) % totalRoles;
+        setTimeout(showNextRole, 2000); // Change role every 2 seconds
+    }
+
+    showNextRole();
+    
+});
+
+
+</script>
+</html>
