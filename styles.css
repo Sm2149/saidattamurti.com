@@ -1133,7 +1133,13 @@ body {
     display: flex !important;
     flex-direction: column;
 }
+.nav-list ul {
+  display: none;
+}
 
+.nav-list ul.open {
+  display: block;
+}
 
   
   
