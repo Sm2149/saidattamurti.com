@@ -1070,6 +1070,65 @@ body {
     padding: 5px;
     font-size: 16px;
 }
+/* Existing CSS content */
+
+/* Add these styles for the hamburger menu */
+.nav-list ul.open {
+  display: flex;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .nav-list ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  .nav-list ul.open {
+    display: flex;
+  }
+
+  .nav-list ul li {
+    margin: 1rem 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  #hero h1 {
+    font-size: 2rem;
+  }
+
+  #skills .skills-container {
+    flex-direction: column;
+  }
+
+  #skills .skill-item {
+    margin: 0.5rem 0;
+  }
+
+  #projects .project-item {
+    flex-direction: column;
+  }
+
+  #contact .contact-item {
+    flex-direction: column;
+  }
+}
 
 
   
