@@ -323,12 +323,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </script>
   <script>
-    // app.js
+  document.addEventListener("DOMContentLoaded", () => {
     const hamburger = document.querySelector('.hamburger');
     const navList = document.querySelector('.nav-list ul');
 
     hamburger.addEventListener('click', () => {
+      console.log('Hamburger menu clicked'); // Debug statement
       navList.classList.toggle('open');
     });
-  </script>
+  });
+</script>
 </html>
