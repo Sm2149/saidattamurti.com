@@ -43,7 +43,7 @@
         <div>
             <h1>Welcome to My Portfolio, <span></span></h1>
             <h1>I am Saidatta Murti, <span></span></h1>
-            <h1><span class="role-text">a Programmer,</span> <span class="role-text">Data Analyst,</span> <span class="role-text">Social Media Manager,</span> <span class="role-text">and SEO Specialist</span> </h1>
+            <h1><span class="role-text">a Programmer,</span> <span class="role-text">Data Analyst,</span> <span class="role-text">Social Media Manager,</span> <span class="role-text">and SEO Specialist.</span> </h1>
             <div class="cta-container">
                 <a href="#projects" type="button" class="cta">Explore My Work</a>
             </div>
@@ -277,6 +277,7 @@
     </div>
   </section>
   <!-- End Footer -->
+  <script src="./app.js"></script>
 </body>
 <script>
     function openSkill(evt, skillName) {
@@ -297,6 +298,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelector(".tablink").click();
 });
+// Add this script to your app.js file or within a <script> tag
 
     document.addEventListener("DOMContentLoaded", function() {
     let index = 0;
@@ -320,15 +322,24 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 </script>
-  <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const hamburger = document.querySelector('.hamburger');
-    const navList = document.querySelector('.nav-list ul');
-
-    hamburger.addEventListener('click', () => {
-      console.log('Hamburger menu clicked'); // Debug statement
-      navList.classList.toggle('open');
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.querySelector('.hamburger');
+      const navList = document.querySelector('.nav-list ul');
+  
+      hamburger.addEventListener('click', () => {
+        console.log('Hamburger menu clicked'); // Debug statement
+        navList.classList.toggle('open');
+      });
     });
-  });
-</script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector(".hamburger");
+    const navList = document.querySelector(".nav-list ul");
+
+    hamburger.addEventListener("click", function () {
+        this.classList.toggle("active");
+        navList.classList.toggle("active");
+    });
+});
+  </script>
 </html>
