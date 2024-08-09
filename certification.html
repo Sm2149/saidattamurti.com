@@ -522,6 +522,16 @@ const navList = document.querySelector('.nav-list ul');
 hamburger.addEventListener('click', () => {
   navList.classList.toggle('open');
 });
+                document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector(".hamburger");
+    const navList = document.querySelector(".nav-list ul");
+
+    hamburger.addEventListener("click", function () {
+        this.classList.toggle("active");
+        navList.classList.toggle("active");
+    });
+});
+
             </script>
               
             
