@@ -351,6 +351,21 @@ document.addEventListener("DOMContentLoaded", function() {
         navList.classList.toggle("active");
     });
 });
+  document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector('.hamburger');
+    const navList = document.querySelector('.nav-list ul');
+    const menuItems = document.querySelectorAll('.nav-list ul li a');
+
+    hamburger.addEventListener('click', () => {
+        navList.classList.toggle('open');
+    });
+
+    menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+            navList.classList.remove('open');
+        });
+    });
+});
   
   </script>
 </html>
