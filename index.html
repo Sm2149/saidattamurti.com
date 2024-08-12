@@ -290,6 +290,7 @@
   <script src="./app.js"></script>
 </body>
 <script>
+    // Handle tab switching
     function openSkill(evt, skillName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
@@ -309,6 +310,7 @@
         document.querySelector(".tablink").click();
     });
 
+    // Role text rotation
     document.addEventListener("DOMContentLoaded", function() {
         let index = 0;
         const roles = document.querySelectorAll('.role-text');
@@ -329,20 +331,19 @@
         showNextRole();
     });
 
-    document.addEventListener("DOMContentLoaded", () => {
-        const hamburger = document.querySelector('.hamburger');
-        const navList = document.querySelector('.nav-list ul');
+    // Hamburger menu functionality
+    document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger");
+        const navList = document.querySelector(".nav-list ul");
         const menuItems = document.querySelectorAll('.nav-list ul li a');
 
-        hamburger.addEventListener('click', () => {
-            navList.classList.toggle('open');
-            hamburger.classList.toggle('active');
+        hamburger.addEventListener("click", function () {
+            navList.classList.toggle("open");
         });
 
         menuItems.forEach(item => {
             item.addEventListener('click', () => {
                 navList.classList.remove('open');
-                hamburger.classList.remove('active');
             });
         });
     });
