@@ -290,64 +290,68 @@
   <script src="./app.js"></script>
 </body>
 <script>
-    // Handle tab switching
     function openSkill(evt, skillName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";  
-        }
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(skillName).style.display = "block";  
-        evt.currentTarget.className += " active";
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";  
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(skillName).style.display = "block";  
+    evt.currentTarget.className += " active";
+}
+
+// Set default tab to be open
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector(".tablink").click();
+});
+// Add this script to your app.js file or within a <script> tag
+
+    document.addEventListener("DOMContentLoaded", function() {
+    let index = 0;
+    const roles = document.querySelectorAll('.role-text');
+    const totalRoles = roles.length;
+
+    function showNextRole() {
+        roles.forEach((role, i) => {
+            role.classList.remove('active');
+            if (i === index) {
+                role.classList.add('active');
+            }
+        });
+
+        index = (index + 1) % totalRoles;
+        setTimeout(showNextRole, 2000); // Change role every 2 seconds
     }
 
-    // Set default tab to be open
-    document.addEventListener("DOMContentLoaded", function() {
-        document.querySelector(".tablink").click();
-    });
+    showNextRole();
+    
+});
 
-    // Role text rotation
-    document.addEventListener("DOMContentLoaded", function() {
-        let index = 0;
-        const roles = document.querySelectorAll('.role-text');
-        const totalRoles = roles.length;
-
-        function showNextRole() {
-            roles.forEach((role, i) => {
-                role.classList.remove('active');
-                if (i === index) {
-                    role.classList.add('active');
-                }
-            });
-
-            index = (index + 1) % totalRoles;
-            setTimeout(showNextRole, 2000); // Change role every 2 seconds
-        }
-
-        showNextRole();
-    });
-
-    // Hamburger menu functionality
-    document.addEventListener("DOMContentLoaded", function () {
-        const hamburger = document.querySelector(".hamburger");
-        const navList = document.querySelector(".nav-list ul");
-        const menuItems = document.querySelectorAll('.nav-list ul li a');
-
-        hamburger.addEventListener("click", function () {
-            navList.classList.toggle("open");
-        });
-
-        menuItems.forEach(item => {
-            item.addEventListener('click', () => {
-                navList.classList.remove('open');
-            });
-        });
-    });
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.querySelector('.hamburger');
+      const navList = document.querySelector('.nav-list ul');
+  
+      hamburger.addEventListener('click', () => {
+        console.log('Hamburger menu clicked'); // Debug statement
+        navList.classList.toggle('open');
+      });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector(".hamburger");
+    const navList = document.querySelector(".nav-list ul");
 
+    hamburger.addEventListener("click", function () {
+        this.classList.toggle("active");
+        navList.classList.toggle("active");
+    });
+});
+  
+  </script>
 
 </html>
