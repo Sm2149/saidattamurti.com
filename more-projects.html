@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saidatta Murti - Projects</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+    
+        header {
+            background-color: #1b1b1b;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+    
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+    
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+            background-color: #292929;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+    
+        nav ul li {
+            margin: 0 10px;
+        }
+    
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1em;
+            padding: 15px 20px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+    
+        nav ul li a:hover {
+            background-color: #404040;
+            border-radius: 5px;
+        }
+    
+        #portfolio {
+            padding: 50px 0;
+            background-color: #ffffff;
+        }
+    
+        #portfolio .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    
+        #portfolio h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #333;
+            font-weight: 700;
+        }
+    
+        .portfolio-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+    
+        .portfolio-item {
+            background-color: #fafafa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s;
+        }
+    
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+    
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    
+        .portfolio-details {
+            margin-top: 15px;
+        }
+    
+        .portfolio-details h3 {
+            color: #1b1b1b;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+    
+        .portfolio-details p {
+            margin: 5px 0;
+            color: #555;
+            line-height: 1.6;
+        }
+    
+        footer {
+            background-color: #1b1b1b;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+            box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
+        }
+    
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+            letter-spacing: 0.5px;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <header>
+        <h1>Saidatta Murti</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about us.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="certification.html">Certifications</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <ul class="portfolio-list">
+                <li class="portfolio-item">
+                    <img src="portfolio1.png" alt="tic tac toe">
+                    <div class="portfolio-details">
+                        <h3>Tic Tac Toe</h3>
+                        <p><strong>Feb 2022 - Apr 2022</strong></p>
+                        <p><strong>Associated with University of Kent</strong></p>
+                        <p>Built a tic tac toe game in Java where humans play against the computer.</p>
+                        <p><strong>Skills:</strong> Java · BlueJ · Problem Solving · Project Planning</p>
+                    </div>
+                </li>
+                <li class="portfolio-item">
+                    <img src="Screenshot 2024-03-28 173018.png" alt="Data Analysis Report">
+                    <div class="portfolio-details">
+                        <h3>Data Analysis Report</h3>
+                        <p><strong>Feb 2022 - Apr 2022</strong></p>
+                        <p><strong>Associated with University of Kent</strong></p>
+                        <p>Conducted data analysis and wrote Python scripts to classify rejection emails, reducing manual sorting time by 70%.</p>
+                        <p><strong>Skills:</strong> Python (Programming Language) · Data Analysis</p>
+                    </div>
+                </li>
+                <li class="portfolio-item">
+                    <img src="Screenshot 2024-02-24 163835.png" alt="Garage Booking Website">
+                    <div class="portfolio-details">
+                        <h3>Garage Booking Website</h3>
+                        <p><strong>Feb 2022 - Apr 2022</strong></p>
+                        <p><strong>Associated with University of Kent</strong></p>
+                        <p>Constructed a garage booking website, simplifying the booking process and improving user experience. Received more than 85% positive reviews while testing.</p>
+                        <p><strong>Skills:</strong> Teamwork · Communication · HTML · CodeIgniter · PHP · User Research · User Interface Design · User-centered Design · User Stories</p>
+                    </div>
+                </li>
+                <li class="portfolio-item">
+                    <img src="dynamic_arrays.png" alt="Dynamic Arrays & Recursion">
+                    <div class="portfolio-details">
+                        <h3>Dynamic Arrays & Recursion</h3>
+                        <p><strong>Feb 2022 - Apr 2022</strong></p>
+                        <p><strong>Associated with University of Kent</strong></p>
+                        <p>Implemented dynamic arrays and recursive solutions for computational problems, improving processing efficiency.</p>
+                        <p><strong>Skills:</strong> Dynamic Arrays · Problem Solving</p>
+                    </div>
+                </li>
+                <li class="portfolio-item">
+                    <img src="gp_office_software.png" alt="GP Office Software">
+                    <div class="portfolio-details">
+                        <h3>GP Office Software</h3>
+                        <p><strong>Feb 2022 - Apr 2022</strong></p>
+                        <p><strong>Associated with University of Kent</strong></p>
+                        <p>Designed encryption-focused software for GP offices, advancing data security and operational efficiency.</p>
+                        <p><strong>Skills:</strong> Teamwork · Presentation Skills</p>
+                    </div>
+                </li>
+                <li class="portfolio-item">
+                    <img src="haskell_js_integration.png" alt="Haskell & JavaScript Integration">
+                    <div class="portfolio-details">
+                        <h3>Haskell & JavaScript Integration</h3>
+                        <p><strong>Feb 2022 - Apr 2022</strong></p>
+                        <p><strong>Associated with University of Kent</strong></p>
+                        <p>Generated JavaScript files from Haskell for in-game data and behavior, deepening game interactivity for a tic-tac-toe game.</p>
+                        <p><strong>Skills:</strong> Haskell · Problem Solving · Creative Problem Solving</p>
+                    </div>
+                </li>
+                <li class="portfolio-item">
+                    <img src="health_product_development.png" alt="Health Product Development">
+                    <div class="portfolio-details">
+                        <h3>Health Product Development</h3>
+                        <p><strong>Feb 2022 - Apr 2022</strong></p>
+                        <p><strong>Associated with University of Kent</strong></p>
+                        <p>Collaborated on developing a health-focused product (smart thin-plaster that collects user's vital data like blood pressure, heart rate, etc.), contributing to a 20% increase in user engagement.</p>
+                        <p><strong>Skills:</strong> Teamwork · Business Strategy · eHealth · Project Management · Management</p>
+                    </div>
+                </li>
+                <li class="portfolio-item">
+                    <img src="holiday_park_database.png" alt="Holiday Park Database">
+                    <div class="portfolio-details">
+                        <h3>Holiday Park Database</h3>
+                        <p><strong>Feb 2022 - Apr 2022</strong></p>
+                        <p><strong>Associated with University of Kent</strong></p>
+                        <p>Built a comprehensive PostgreSQL database system for a holiday park company, optimizing data retrieval and management processes.</p>
+                        <p><strong>Skills:</strong> PostgreSQL · Databases · SQL</p>
+                    </div>
+                </li>
+                <li class="portfolio-item">
+                    <img src="startup_evaluation.png" alt="Start-up Evaluation">
+                    <div class="portfolio-details">
+                        <h3>Start-up Evaluation</h3>
+                        <p><strong>Feb 2022 - Apr 2022</strong></p>
+                        <p><strong>Associated with University of Kent</strong></p>
+                        <p>Evaluated start-up ideas and made business plans, ensuring realistic and early revenue generation strategies.</p>
+                        <p><strong>Skills:</strong> Business Strategy · Business Analysis · Business Development · New Business Development · Business Planning</p>
+                    </div>
+                </li>
+                <li class="portfolio-item">
+                    <img src="turtlebot3_navigation.png" alt="Turtlebot3 Navigation">
+                    <div class="portfolio-details">
+                        <h3>Turtlebot3 Navigation</h3>
+                        <p><strong>Feb 2022 - Apr 2022</strong></p>
+                        <p><strong>Associated with University of Kent</strong></p>
+                        <p>Programmed shortest path algorithms for Turtlebot3 in Gazebo and Rviz, enhancing robotic navigation accuracy.</p>
+                        <p><strong>Skills:</strong> Gazebo · Rviz · Cognitive Robotics · Teamwork</p>
+                    </div>
+                </li>
+                <li class="portfolio-item">
+                    <img src="gym_website.png" alt="Gym Website">
+                    <div class="portfolio-details">
+                        <h3>Gym Website</h3>
+                        <p><strong>Feb 2022 - Apr 2022</strong></p>
+                        <p><strong>Associated with University of Kent</strong></p>
+                        <p>Created a user interactive gym website using CodeIgniter, streamlining user registration and data management.</p>
+                        <p><strong>Skills:</strong> HTML · CSS · CodeIgniter</p>
+                    </div>
+                </li>
+                <li class="portfolio-item">
+                    <img src="search_algorithms.png" alt="Search Algorithm">
+                    <div class="portfolio-details">
+                        <h3>Search Algorithm</h3>
+                        <p><strong>Feb 2022 - Apr 2022</strong></p>
+                        <p><strong>Associated with University of Kent</strong></p>
+                        <p>Integrated greedy, A*, BFS, and DFS search algorithms into a Pac-Man game, improving pathfinding efficiency.</p>
+                        <p><strong>Skills:</strong> Artificial Intelligence (AI) · Search Algorithms · K-Nearest Neighbors (KNN) · Java</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Saidatta Murti. All rights reserved.</p>
+    </footer>
+</body>
+</html>
